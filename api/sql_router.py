@@ -353,3 +353,5 @@ def delete_model_task(model_task_id: int, db: Session = Depends(get_db)):
     db.delete(db_model_task)
     db.commit()
     return None
+
+
