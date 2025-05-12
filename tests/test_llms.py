@@ -10,7 +10,6 @@ from unittest.mock import patch
 from ai_model_crawler import main
 from unittest.mock import patch
 
-
 @pytest.fixture
 def crawler():
     """

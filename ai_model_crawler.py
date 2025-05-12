@@ -16,6 +16,7 @@ from pydantic import BaseModel, Field
 from app.services.savingdb import save_to_database
 load_dotenv()
 
+
 class LocalLLMConfig:
     def __init__(self, provider: str, api_token: str = "", base_url: str = ""):
         self.provider = provider
