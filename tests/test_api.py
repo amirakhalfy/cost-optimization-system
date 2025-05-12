@@ -5,7 +5,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from app.main import app  
 client = TestClient(app)
 
-
 def test_compare_models():
     """This test makes sure the retrieval of models is succesful. (API return status code == 200)"""
     response = client.get("/aggregation/compare-models", params={"model_ids": [94,95]})

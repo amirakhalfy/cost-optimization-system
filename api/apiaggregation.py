@@ -7,7 +7,6 @@ from typing import Dict
 from app.db.db_setup import get_db
 from app.db.models import Model, Provider, Pricing, Benchmark, Task, ModelTask, BenchmarkResult
 
-
 router = APIRouter(prefix="/aggregation")
 
 class ModelComparison(BaseModel):
